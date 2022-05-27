@@ -1,0 +1,32 @@
+.main_nav {
+  background-color: #62b91b;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  z-index: 999;
+  width: 100vw;
+  position: fixed;
+}
+
+.main_nav .logo img {
+  max-width: 200px;
+}
+
+.main_nav .navbar ul li {
+  list-style: none;
+}
+
+.main_nav .navbar ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #cd06ff;
+  -webkit-transition: .5s all ease-in-out;
+  transition: .5s all ease-in-out;
+}
+
+.main_nav .navbar ul li a:hover::before {
+  content: "";
+  width: 100%;
+  height: 10px;
+  background-color: blue;
+}
+/*# sourceMappingURL=main.css.map */
