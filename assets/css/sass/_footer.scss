@@ -1,19 +1,6 @@
 .container_footer{
     background-color: $color-h1;
     position: relative;
-
-    .container-img{
-        position: relative;
-        img{
-            position: absolute;
-            margin-top: -13.59%;
-
-            @media (max-width: 800px) {
-                margin-top: -36.99%;
-            }
-        }
-    }
-
     span{
         
     }

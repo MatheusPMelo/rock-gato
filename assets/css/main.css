@@ -375,19 +375,4 @@
   background-color: purple;
   position: relative;
 }
-
-.container_footer .container-img {
-  position: relative;
-}
-
-.container_footer .container-img img {
-  position: absolute;
-  margin-top: -13.59%;
-}
-
-@media (max-width: 800px) {
-  .container_footer .container-img img {
-    margin-top: -36.99%;
-  }
-}
 /*# sourceMappingURL=main.css.map */
