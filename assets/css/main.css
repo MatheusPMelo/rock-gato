@@ -186,4 +186,37 @@
             transform: rotate(315deg);
   }
 }
+
+.main_banner .banner_slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+}
+
+.main_banner .banner_slider img {
+  top: 10%;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.main_banner .banner_slider .selected {
+  opacity: 1;
+}
 /*# sourceMappingURL=main.css.map */
