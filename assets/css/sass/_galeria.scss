@@ -43,4 +43,22 @@
             }
         }
     }
+
+    .container_images{
+        margin-top: 5rem;
+        text-align: center;
+        img{
+            max-width: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 1rem;
+            box-shadow: 0 0 20px rgba(0,0,0,0.09);
+            transition: .3s all ease-in-out;
+
+            &:hover{
+                transform: scale(1.2);
+                box-shadow: 0 0 30px rgba(0,0,0,0.2);
+            }
+        }
+    }
 }
