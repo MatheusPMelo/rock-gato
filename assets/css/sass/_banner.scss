@@ -17,6 +17,10 @@
             align-content: center;
             align-items: center;
             background-color: rgba(169, 250, 253, 0.356);
+            
+            @media (min-width: 1024px) and (max-width: 2560px){
+                height: 86.5vh;
+            }
             h1{
                 font-family: 'Satisfy', cursive;
                 font-size: 8rem;
@@ -35,6 +39,10 @@
             height: 90%;
             object-fit: cover;
             transition: opacity .2s;
+
+            @media (min-width: 1024px) and (max-width: 2560px){
+                top: 8%;
+            }
         }
         .selected{
             opacity: 1;
