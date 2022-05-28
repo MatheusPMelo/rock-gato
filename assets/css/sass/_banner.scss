@@ -5,10 +5,30 @@
         align-items: center;
         align-content: center;
         position: relative;
-        width: 100vw;
+        width: 100%;
         height: 90vh;
+
+        .title{
+            z-index: 1;
+            width: 100%;
+            height: 93.5vh;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            background-color: rgba(169, 250, 253, 0.356);
+            h1{
+                font-family: 'Satisfy', cursive;
+                font-size: 8rem;
+                color: $color-h1;
+
+                @media (max-width: 800px){
+                    font-size: 5rem;
+                }
+            }
+        }
         img{
-            top: 10%;
+            top: 12%;
             opacity: 0;
             position: absolute;
             width: 100%;
@@ -22,8 +42,8 @@
 
         .shine{
             position: absolute;
-            z-index: 999999999;
-            width: 100vw;
+            
+            width: 100%;
             height: 90vh;
             img{
                 width: 100%;

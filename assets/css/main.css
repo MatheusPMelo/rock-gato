@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 .main_nav {
   background-color: #5b0077;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
@@ -82,7 +83,7 @@
   }
   .main_nav .navbar .show ul {
     position: absolute;
-    z-index: 999;
+    z-index: 999999;
     -webkit-transition: .3s all ease-in-out;
     transition: .3s all ease-in-out;
     background-color: #5b0077;
@@ -200,12 +201,42 @@
   -ms-flex-line-pack: center;
       align-content: center;
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 90vh;
 }
 
+.main_banner .banner_slider .title {
+  z-index: 1;
+  width: 100%;
+  height: 93.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(169, 250, 253, 0.356);
+}
+
+.main_banner .banner_slider .title h1 {
+  font-family: 'Satisfy', cursive;
+  font-size: 8rem;
+  color: purple;
+}
+
+@media (max-width: 800px) {
+  .main_banner .banner_slider .title h1 {
+    font-size: 5rem;
+  }
+}
+
 .main_banner .banner_slider img {
-  top: 10%;
+  top: 12%;
   opacity: 0;
   position: absolute;
   width: 100%;
@@ -222,8 +253,7 @@
 
 .main_banner .banner_slider .shine {
   position: absolute;
-  z-index: 999999999;
-  width: 100vw;
+  width: 100%;
   height: 90vh;
 }
 
@@ -231,5 +261,57 @@
   width: 100%;
   height: 90%;
   opacity: 1 !important;
+}
+
+.gallery {
+  background-color: rgba(238, 238, 238, 0.13);
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  padding: 3%;
+  border-radius: 2rem;
+  margin-top: 5%;
+}
+
+.gallery h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Satisfy', cursive;
+  color: purple;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery h1::after {
+  content: "";
+  background-image: url("https://cdn.ecvol.com/s/www.querocase.com.br/produtos/topsocket-patinha-de-gato/z/0.png?v=0");
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 2;
+  top: 94%;
+  border: 5px solid purple;
+  border-radius: 50%;
+}
+
+.gallery h1::before {
+  content: "";
+  width: 30%;
+  height: 5px;
+  border-radius: 10px;
+  background-color: purple;
+  position: absolute;
+  top: 130%;
+}
+
+@media (max-width: 800px) {
+  .gallery h1::before {
+    top: 143%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,46 @@
+
+
+.gallery{
+    background-color: rgba(238, 238, 238, 0.13);
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    padding: 3%;
+    border-radius: 2rem;
+    margin-top: 5%;
+
+    h1{
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: 'Satisfy', cursive;
+        color: $color-h1;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        &::after{
+            content: "";
+            background-image: url('https://cdn.ecvol.com/s/www.querocase.com.br/produtos/topsocket-patinha-de-gato/z/0.png?v=0');
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            z-index: 2;
+            top: 94%;
+            border: 5px solid $color-h1;
+            border-radius: 50%;
+       }
+        
+        &::before{
+            content: "";
+            width: 30%;
+            height: 5px;
+            border-radius: 10px;
+            background-color: $color-h1;
+            position: absolute;
+            top: 130%;
+
+            @media (max-width: 800px) {
+                top: 143%;
+            }
+        }
+    }
+}
