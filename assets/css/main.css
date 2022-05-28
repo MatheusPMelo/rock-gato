@@ -339,17 +339,19 @@
      object-fit: cover;
   margin: 10px;
   border-radius: 1rem;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.09);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.09);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   -webkit-transition: .3s all ease-in-out;
   transition: .3s all ease-in-out;
+  opacity: .8;
 }
 
 .gallery .container_images img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 0 40px black;
+          box-shadow: 0 0 40px black;
 }
 
 .container_video video {
@@ -360,5 +362,6 @@
 
 .container_footer {
   background-color: purple;
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */

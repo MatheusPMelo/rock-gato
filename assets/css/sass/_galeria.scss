@@ -53,12 +53,14 @@
             object-fit: cover;
             margin: 10px;
             border-radius: 1rem;
-            box-shadow: 0 0 20px rgba(0,0,0,0.09);
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
             transition: .3s all ease-in-out;
+            opacity: .8;
 
             &:hover{
-                transform: scale(1.2);
-                box-shadow: 0 0 40px rgba(0,0,0,0.2);
+                opacity: 1;
+                transform: scale(1.1);
+                box-shadow: 0 0 40px rgba(0,0,0,1);
             }
         }
     }
