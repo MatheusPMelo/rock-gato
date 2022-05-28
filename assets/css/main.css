@@ -375,4 +375,29 @@
   background-color: purple;
   position: relative;
 }
+
+.container_footer span {
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-top: 1em;
+}
+
+.container_footer span:nth-child(1) {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-left: 16px;
+}
+
+.container_footer span:nth-child(2) {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  margin-left: 0;
+}
 /*# sourceMappingURL=main.css.map */

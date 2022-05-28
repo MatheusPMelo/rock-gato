@@ -2,6 +2,22 @@
     background-color: $color-h1;
     position: relative;
     span{
-        
+        position: absolute;
+        width: 30px;
+        height: 8px;
+        border-radius: 10px;
+        background-color: #fff;
+        margin-top: 1em;
+
+        &:nth-child(1){
+            transform: translateY(10px);
+            transform: rotate(45deg);
+            margin-left: 16px;
+        }
+        &:nth-child(2){
+            transform: translateY(-10px);
+            transform: rotate(135deg);
+            margin-left: 0;
+        }
     }
 }
