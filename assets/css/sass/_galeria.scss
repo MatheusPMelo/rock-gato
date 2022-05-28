@@ -49,6 +49,7 @@
         text-align: center;
         img{
             max-width: 200px;
+            min-height: 400px;
             object-fit: cover;
             margin: 10px;
             border-radius: 1rem;
@@ -57,7 +58,7 @@
 
             &:hover{
                 transform: scale(1.2);
-                box-shadow: 0 0 30px rgba(0,0,0,0.2);
+                box-shadow: 0 0 40px rgba(0,0,0,0.2);
             }
         }
     }
