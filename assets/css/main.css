@@ -63,6 +63,9 @@
 }
 
 @media (max-width: 800px) {
+  .main_nav .navbar {
+    display: none !important;
+  }
   .main_nav .toggle {
     position: relative;
     display: -webkit-box;
@@ -109,8 +112,10 @@
     -webkit-transform: rotate(315deg);
             transform: rotate(315deg);
   }
-  .main_nav .navbar {
-    display: none !important;
+  .main_nav .toggle.active .navbar {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
 }
 /*# sourceMappingURL=main.css.map */
