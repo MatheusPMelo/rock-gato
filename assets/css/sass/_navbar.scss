@@ -64,35 +64,78 @@
 }
 
 @media (max-width: 800px){
+
     .main_nav{
-        .navbar{
-            display: none !important;
+        height: 105px;
+
+        .logo{
+            img{
+                height: 104px;
+            }
         }
-        .toggle{
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: end;
-            overflow: hidden;
+        
+        .navbar{
+            nav{
+                display: none;
+            }
+            .show{
+                display: flex !important;
+                position: relative;
+                width: 100%;
+                height: 125%;
 
-            span{
-                position: absolute;
-                width: 50px;
-                height: 5px;
-                background-color: #fff;
-                border-radius: 10px;
-                transition: .5s ease-in-out all;
+                ul{
+                    position: absolute;
+                    z-index: 999;
+                    transition: .3s all ease-in-out;
+                    background-color: rgb(91, 0, 119);
+                    align-items: center;
+                    border-radius: 0 0 10px 10px;
+                    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+                    height: 100%;
+                    width: 50vw;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    li{
+                        padding: 1rem auto;
 
-                &:nth-child(1){
-                    transform: translateY(-15px);
-                }
-                &:nth-child(2){
-                    transform: translateY(15px);
+                        @media (max-width: 320px) {
+                            margin: 0 0.3rem;
+                        }
+                        a{
+                            text-align: center;
+                            font-size: 20px;
+                        }
+                    }
                 }
             }
-
-            &.active{
+            
+            .toggle{
+                position: relative;
+                display: flex !important;
+                flex-direction: column;
+                justify-content: center;
+                align-items: end;
+                overflow: hidden;
+                height: 100%;
+    
+                span{
+                    position: absolute;
+                    width: 50px;
+                    height: 5px;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    transition: .5s ease-in-out all;
+    
+                    &:nth-child(1){
+                        transform: translateY(-15px);
+                    }
+                    &:nth-child(2){
+                        transform: translateY(15px);
+                    }
+                }            
+            }
+            .active{
                 span{
                     &:nth-child(3){
                         width: 0;
@@ -104,12 +147,7 @@
                         transform: rotate(315deg);
                     }
                 }
-
-                .navbar{
-                    display: flex !important;
-                }
-            }
-        }
-        
+            } 
+        }        
     }
 }
