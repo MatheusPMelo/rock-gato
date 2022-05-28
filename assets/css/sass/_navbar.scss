@@ -95,7 +95,7 @@
             &.active{
                 span{
                     &:nth-child(3){
-                        transform: rotateY(90deg);
+                        width: 0;
                     }
                     &:nth-child(2){
                         transform: rotate(45deg);

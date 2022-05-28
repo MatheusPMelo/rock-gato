@@ -101,8 +101,7 @@
             transform: translateY(15px);
   }
   .main_nav .toggle.active span:nth-child(3) {
-    -webkit-transform: rotateY(90deg);
-            transform: rotateY(90deg);
+    width: 0;
   }
   .main_nav .toggle.active span:nth-child(2) {
     -webkit-transform: rotate(45deg);
