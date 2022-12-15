@@ -1,4 +1,4 @@
-# gatos-feios
+# Gatos - Rock
 
 ## Este é um projeto pessoal.
 Uma pequena homenagem a o gato da minha irmã.
